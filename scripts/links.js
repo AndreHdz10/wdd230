@@ -1,5 +1,5 @@
 const ActivitiesElement = document.querySelector("#activities");
-const githubLink = "https://izakhearn.github.io/WDD230/";
+const githubLink = "https://andrehdz10.github.io/wdd230/";
 const JsonLink = githubLink + "links.json";
 
 async function getLinks() {

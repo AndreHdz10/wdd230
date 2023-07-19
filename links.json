@@ -2,7 +2,7 @@
     "Week1": [
       {
         "name": "Holy Grail",
-        "link": "week1/holygrail.html"
+        "link": "week01/holygrail.html"
       },
       {
         "name": "Applied JS",
@@ -10,11 +10,11 @@
       },
       {
         "name": "Media Query",
-        "link": "week1/media-query.html"
+        "link": "week01/media-query.html"
       },
       {
         "name": "Project Site Plan",
-        "link": "coc/site-plan.html"
+        "link": "week01/chamber-site-plan.html"
       }
     ],
     "Week2": [
@@ -24,22 +24,22 @@
       },
       {
         "name": "Designs",
-        "link": "week2/designs.html"
+        "link": "week02/designs.html"
       },
       {
         "name": "Book of Mormon Chapters",
-        "link": "week2/bom.html"
+        "link": "week02/bom.html"
       },
       {
         "name": "Week 2 COC Home Page",
-        "link": "coc/index.html"
+        "link": "chamber/index.html"
       }
     ],
   
     "Week3": [
       {
         "name": "WebP",
-        "link": "week3/images/landscape.webp"
+        "link": "week03/images/landscape.webp"
       },
       {
         "name": "Responsive Images",
@@ -47,15 +47,15 @@
       },
       {
         "name": "LazyLoad",
-        "link": "week3/lazyload.html"
+        "link": "week03/lazyload.html"
       },
       {
         "name": "Local Storage API BOM",
-        "link": "week3/bom.html"
+        "link": "week03/bom.html"
       },
       {
         "name": "Week 3 COC Discover Page",
-        "link": "coc/discover.html"
+        "link": "chamber/discover.html"
       }
     ],
   
@@ -66,19 +66,19 @@
       },
       {
         "name": "CSS Combinators",
-        "link": "week4/images/Week4-Combinators.webp"
+        "link": "week04/images/Week4-Combinators.webp"
       },
       {
         "name": "Table",
-        "link": "week4/tablebuild.html"
+        "link": "week04/tablebuild.html"
       },
       {
         "name": "HTML Form",
-        "link": "week4/form/index.html"
+        "link": "week04/form/index.html"
       },
       {
         "name": "Week 4 COC Join Page",
-        "link": "coc/join.html"
+        "link": "chamber/join.html"
       }
     ],
   
@@ -89,19 +89,19 @@
       },
       {
         "name": "New Members JSON",
-        "link": "week5/new-ward-members.json"
+        "link": "week05/new-ward-members.json"
       },
       {
         "name": "Prophets",
-        "link": "week5/prophets.html"
+        "link": "week05/prophets.html"
       },
       {
         "name": "Weather",
-        "link": "week5/weather.html"
+        "link": "week05/weather.html"
       },
       {
         "name": "Week 5 COC Directory Page",
-        "link": "coc/directory.html"
+        "link": "chamber/directory.html"
       }
     ]
   }
