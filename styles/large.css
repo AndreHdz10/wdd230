@@ -14,7 +14,7 @@
         margin: 0;
       }
 
-    nav {
+    nav, #content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
