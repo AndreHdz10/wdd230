@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Izak Hearn" />
+    <meta
+      name="description"
+      content="Home page for the Clear Water Chamber of Commerce which includes a summary of information regarding the chamber and its members"
+    />
+    <meta name="title" content="Clear Water Chamber of Commerce" />
+    <meta property="og:title" content="Clear Water Chamber of Commerce" />
+    <meta
+      property="og:description"
+      content="Discover page for the Clear Water Chamber of Commerce which includes a summary of information regarding the chamber and its members"
+    />
+    <meta property="og:image" content="images/logo.svg" />
+    <meta property="og:url" content="https://andrehdz10.github.io/wdd230/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Clear Water Chamber of Commerce" />
+    <meta property="og:locale" content="en_US" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/visit.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/mobileMenu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <link rel="icon" href="images/favicon.ico" />
+    <title>Clear Water Chamber of Commerce | Discover Page | Events</title>
+  </head>
+
+  <body>
+    <section id="banner">
+      <h3 id="meeting-message">
+        Come and join us this wednesday at 7PM for our weekly meet and
+        greet.<span id="close-banner">❌</span>
+      </h3>
+    </section>
+    <nav>
+      <img
+        id="nav-logo"
+        src="images/logo.svg"
+        alt="Clear Water Chamber of Commerce Logo"
+      />
+      <div id="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+          <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
+        </svg>
+      </div>
+      <div id="close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+          <path
+            d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z"
+          />
+        </svg>
+      </div>
+      <ul id="menu-items">
+        <li class="menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item"><a href="discover.html">Discover</a></li>
+        <li class="menu-item"><a href="directory.html">Directory</a></li>
+        <li class="menu-item"><a href="join.html">Join</a></li>
+      </ul>
+      <!-- Weather Place holder that will be automated to get are weather by Javascript -->
+      <div id="weather"></div>
+    </nav>
+    <header>
+      <section id="hero-1" class="hero">
+        <div class="hero-content">
+          <h1>Clear Water Chamber of Commerce</h1>
+          <p>
+            The Clear Water Chamber of Commerce is a non-profit organization
+            that promotes the business community of Clear Water, Idaho. We are a
+            community of business owners and professionals who are dedicated to
+            the growth and success of our community.
+          </p>
+          <a href="#">Join Now</a>
+        </div>
+      </section>
+    </header>
+    <main id="sidebar-grid">
+      <section id="sidebar">
+        <h2>Area Info and Statistics</h2>
+        <p>Population : 11,947</p>
+        <p>Median Income : $45,000</p>
+        <p>Median Age : 35</p>
+        <p>Median Home Price : $250,000</p>
+        <h2>Last Visit Info</h2>
+        <p>You last viewed this page on :</p>
+        <p id="last-date"></p>
+        <p>Days Between Visits :</p>
+        <p id="days-between"></p>
+      </section>
+      <section id="detailed-events">
+        <h2>Local Interests</h2>
+        <div class="local-interest">
+          <picture>
+            <source
+              media="(min-width: 960px)"
+              srcset="images/mountains-960.webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="images/mountains-400.webp"
+            />
+            <img
+              src="images/mountains.webp"
+              alt=" Rocky Mountain Range"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Rocky Mountain Range</h3>
+        </div>
+        <div class="local-interest">
+          <picture>
+            <source
+              media="(min-width: 960px)"
+              srcset="images/camping-960.webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="images/camping-400.webp"
+            />
+            <img
+              src="images/camping.webp"
+              alt="Camping Grounds"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Camping Grounds</h3>
+        </div>
+        <div class="local-interest">
+          <picture>
+            <source
+              media="(min-width: 960px)"
+              srcset="images/restaurant-960.webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="images/restaurant-400.webp"
+            />
+            <img
+              src="images/restaurant.webp"
+              alt="Restaurants"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Restaurants</h3>
+        </div>
+        <div class="local-interest">
+          <picture>
+            <source media="(min-width: 960px)" srcset="images/art-960.webp" />
+            <source media="(min-width: 400px)" srcset="images/art-400.webp" />
+            <img src="images/art.webp" alt="Art" loading="lazy" />
+          </picture>
+          <h3>Art</h3>
+        </div>
+        <div class="local-interest">
+          <picture>
+            <source
+              media="(min-width: 960px)"
+              srcset="images/hiking-960.webp"
+            />
+            <source
+              media="(min-width: 400px)"
+              srcset="images/hiking-400.webp"
+            />
+            <img src="images/hiking.webp" alt="Hiking" loading="lazy" />
+          </picture>
+          <h3>Hiking</h3>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- Include contact information -->
+      <p>123 Main Street Clear Water, WA 12345</p>
+      <p>Phone: 555-555-5555</p>
+      <p>
+        Email:
+        <a href="mailto:info@clearwatercoc.com"> info@clearwatercoc.com</a>
+      </p>
+      <p id="footer-end">
+        &copy; <span id="copyYear"></span> Clear Water Chamber of Commerce |
+        Andre Hernandez | WDD 230 | <span id="lastModified"></span>
+      </p>
+    </footer>
+  </body>
+</html>

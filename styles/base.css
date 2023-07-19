@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tektur:wght@600&display=swap');
+
+:root {
+    --required: 6px solid #9c2c13;
+    --input-border: solid 1px grey;
+    --valid: 6px solid green;
+}
+
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #1D5D9B;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav li {
+    display: block;
+    text-align: center;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav svg path {
+    fill: #fff;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4D160;
+}
+
+#content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#content a:hover{
+    background-color: #75C2F6;
+}
+
+.title{
+    margin-bottom: 0;
+}
+
+hr{
+    margin: 0 20px;
+}
+
+#menu {
+    display: block;
+}
+
+
+header h1{
+    margin-right: 10px;
+    font-family: 'Tektur', cursive;
+    color: white;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin-right: auto;
+    margin-left: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+main {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h2 {
+
+    color: #000;
+    border-bottom: black solid 1px;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.card-container {
+    flex-direction: column;
+    display: flex;
+    text-align: start;
+}
+
+.card {
+    border: darkgrey solid 1px;
+    margin: 30px 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.card h3{
+    background-color: #75C2F6;
+    margin-top: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+#weather {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+footer{
+    background-color: #1D5D9B;
+    padding: 2px 0;
+    font-family: 'Tektur', cursive;
+    color: white;
+}
+
+#lastModified {
+    font-family: 'Roboto', sans-serif;
+}
+
+.highlight {
+    color: rgb(191, 208, 0);
+} 
+
+.hidden {
+    display: none;
+}
+
+form fieldset {
+    border: 1px solid #445ba9;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: red;
+    font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+    --webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: var(--input-border);
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #555;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    margin-top: 10px;
+    width: 96%;
+    max-width: 20rem;
+}
+
+.ratingLabels {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    color: #555;
+    max-width: 20rem;
+    width: 90%;
+}
+
+form label.top input:required {
+    border-left: var(--required)
+}
+
+form label.top input:required:valid {
+    border-left: var(--valid)
+}
+
+#formResponse table {
+    margin-top: 1rem;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#formResponse th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* Table Heading Top */
+
+#formResponse th {
+    background-color: #9c2c13;
+    color: white;
+
+}
+
+/* Apply zebra effect to table */
+
+#formResponse tr:nth-child(even) {
+    background-color: #8b8b8b7b;
+}
+
+.red-rating {
+    background-color: rgb(255, 118, 118) !important;
+
+
+}

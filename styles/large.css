@@ -1,0 +1,36 @@
+@media screen and (min-width: 500px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      
+      header img {
+        margin-right: 50px;
+      }
+      
+      header h1 {
+        margin: 0;
+      }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav a {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .card-container {
+        margin: 0 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #card-1 {
+        grid-column: 1/3;
+    }
+}

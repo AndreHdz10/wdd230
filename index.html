@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="author" content="Andre Hernandez" />
+    <meta
+      name="description"
+      content="Andre Hernandez' WDD 230 Course Assignment Portal. This is the WDD 230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD 230 course"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/mode.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/links.js" defer></script>
+    <meta property="og:title" content="WDD 230 - Portal - Andre Hernandez" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Andre Hernandez's WDD 230 Course Assignment Portal. This is the WDD 230 assignment portal that will link to all assignments that need to be completed for the BYU-I WDD 230 course"
+    />
+    <meta property="og:url" content="https://izakhearn.github.io/WDD230/" />
+    <meta
+      property="og:image"
+      content="https://izakhearn.github.io/WDD230/images/Clearwater.webp"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>WDD 230 - Portal - Andre Hernandez</title>
+  </head>
+
+  <body>
+    <nav>
+      <div id="menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+          <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
+        </svg>
+      </div>
+      <div id="close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+          <path
+            d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z"
+          />
+        </svg>
+      </div>
+      <div>
+        <ul id="menu-items">
+          <li class="menu-item">
+            <a href=https://www.linkedin.com/in/andre-hernandez-463a45224>LinkedIn</a>
+          </li>
+          <li class="menu-item">
+            <a href="https://www.byui.edu/">BYU-Idaho</a>
+          </li>
+        </ul>
+      </div>
+      <div id="mode">Dark Mode ☑️</div>
+    </nav>
+    <header>
+      <img
+        id="profile-image"
+        src="images/IMG_1267.jpg"
+        alt="Andre Hernandez Profile Picture"
+        loading="lazy"
+      />
+      <h1 id="profile-name">Andre Hernandez</h1>
+    </header>
+    <nav id="content">
+        <a href="index.html">Home</a>
+        <a href="coc/index.html">Chamber</a>
+        <a href="coc/siteplan.html">Site Plan</a>
+        <a href="week4/form/index.html">Form</a>
+      </nav>
+    <main>
+      <h2 class="title"> WDD 230: Web Frontend Development</h2>
+      <div class="card-container">
+        <section class="card" id="card-1">
+          <h3>Learning Activities</h3>
+          <ul id="activities"></ul>
+        </section>
+        <section class="card" id="card-3">
+          <h3>Information</h3>
+          <div id="weather">
+            <h4>Weather</h4>
+            <img id="weatherIcon" />
+            <p id="weatherTemp"></p>
+            <p id="weatherDesc"></p>
+            <p id="visitCount"></p>
+          </div>
+        </section>
+      </div>
+      <section id="map">
+        <h3>Map</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d288315.8303442759!2d-111.9638571!3d39.3209801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d7d79cbeae38b%3A0x47b265daf01e9fc0!2sUtah%2C%20USA!5e0!3m2!1sen!2sau!4v1674142901417!5m2!1sen!2sau"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>      
+      <section class="contact">
+        <h3>Contact</h3>
+        <form method="post" name="contact">
+          <fieldset>
+            <legend>Contact Form</legend>
+            <label class="top"
+              >Full Name* <input type="text" name="fname" required
+            /></label>
+            <label class="top"
+              >Email* <input type="email" name="email" required
+            /></label>
+            <label class="top"
+              >Page Rating [<span id="ratingValue">6</span>]
+              <input
+                type="range"
+                max="10"
+                min="1"
+                name="rating"
+                step="1"
+                list="ratingRange"
+                oninput="document.getElementById('ratingValue').innerHTML = this.value"
+              />
+            </label>
+            <datalist id="ratingRange">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+              <option value="7"></option>
+              <option value="8"></option>
+              <option value="9"></option>
+              <option value="10"></option>
+            </datalist>
+
+            <div class="ratingLabels">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+            </div>
+            <label class="top"
+              >Username*
+              <input
+                type="password"
+                name="username"
+                pattern="(?=.*\W)(?=.*\d)(?=.*[a-z]).{5,12}"
+                required
+            /></label>
+            <label class="top"
+              >Confirm Username*
+              <input
+                type="password"
+                name="confirmUsername"
+                pattern="(?=.*\W)(?=.*\d)(?=.*[a-z]).{5,12}"
+                required
+            /></label>
+            <input class="submitBtn" type="submit" value="Send Rating" />
+          </fieldset>
+        </form>
+        <div id="formResponse">
+          <table id="formTable" class="hidden">
+            <caption>
+              Form Data
+            </caption>
+            <tr>
+              <th>Field</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>Full Name</td>
+              <td id="fname-tbl"></td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td id="email-tbl"></td>
+            </tr>
+            <tr id="ratingRow">
+              <td>Page Rating</td>
+              <td id="rating-tbl"></td>
+            </tr>
+            <tr>
+              <td>Username</td>
+              <td id="username-tbl"></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-text">
+        &copy; <span id="year"></span> | Andre Hernandez| United States 🇺🇸
+      </p>
+      <p class="highlight" id="lastModified"></p>
+    </footer>
+  </body>
+</html>
